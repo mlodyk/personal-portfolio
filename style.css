@@ -1,0 +1,113 @@
+html, body{
+    /* width: fit-content; */
+    /* height: fit-content; */
+    margin:0px;
+}
+
+.navbar{
+    width: 100%;
+    height: 7.5vh;
+
+    top:0px;
+
+    position: sticky;
+	position: -webkit-sticky;
+    z-index: 9;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    mix-blend-mode: overlay;
+
+
+
+    backdrop-filter: blur(4px);
+}
+
+.navbar a{
+    margin-right: 30px;
+
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+
+    text-decoration: none;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.navbar a:hover{
+    scale: 1.1;
+}
+
+.main{
+
+    /* background-blend-mode: multiply; */
+
+    width: 100%;
+    height: 100vh;
+    top:0px;
+
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Lato";
+
+    font-size: 5rem;
+
+    background: linear-gradient(135deg, #9D4EDD 0%, #FF7900 100%);
+
+
+    /* background-color: #5A189A; */
+}
+.main h1{
+    margin:0px;
+    color:whitesmoke;
+
+    /* mix-blend-mode: difference; */
+
+}
+.main a{
+    /* background: linear-gradient(135deg, #FF7900 0%, #9D4EDD 10%);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+    color:#9D4EDD;
+    font-weight: 800;
+    /* margin-bottom: 5%; */
+    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
+
+    /* filter: drop-shadow(2px 2px 2px #000) */
+}
+
+.projects{
+    width: 100%;
+    height: 90vh;
+    /* position: relative; */
+    
+
+    display: flex;
+    background-color: red;
+}
+
+.contact{
+    width: 100%;
+    height: 90vh;
+
+    background-color: green;
+}
+
+.footer{
+    width: 100%;
+    height: 20vh;
+
+    background-color: purple;
+}
