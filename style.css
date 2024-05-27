@@ -1,8 +1,8 @@
 html, body{
-    /* width: fit-content; */
-    /* height: fit-content; */
     margin:0px;
+    font-family: "Lato";
 }
+
 
 .navbar{
     width: 100%;
@@ -10,19 +10,14 @@ html, body{
 
     top:0px;
 
-    position: sticky;
-	position: -webkit-sticky;
-    z-index: 9;
+    position: fixed;
+    z-index: 1;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
 
-    mix-blend-mode: overlay;
-
-
-
-    backdrop-filter: blur(4px);
+    mix-blend-mode: difference;
 }
 
 .navbar a{
@@ -44,13 +39,9 @@ html, body{
 
 .main{
 
-    /* background-blend-mode: multiply; */
-
     width: 100%;
     height: 100vh;
     top:0px;
-
-    position: absolute;
 
     display: flex;
     flex-direction: column;
@@ -58,56 +49,166 @@ html, body{
     justify-content: center;
     align-items: center;
 
-    font-family: "Lato";
 
     font-size: 5rem;
 
-    background: linear-gradient(135deg, #9D4EDD 0%, #FF7900 100%);
-
-
-    /* background-color: #5A189A; */
+    background: linear-gradient(135deg, #FF7900 0%, #9D4EDD 100%);
 }
 .main h1{
     margin:0px;
     color:whitesmoke;
-
-    /* mix-blend-mode: difference; */
-
 }
-.main a{
-    /* background: linear-gradient(135deg, #FF7900 0%, #9D4EDD 10%);
-
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
-
-    color:#9D4EDD;
+.main p{
+    margin: 0px;
+    color: beige;
     font-weight: 800;
-    /* margin-bottom: 5%; */
-    /* text-shadow: 1px 1px 1px rgba(0, 0, 0, 1); */
+    text-decoration:#FF7900 underline;
+}
+.main span{
+    position: relative;
+    top: 0;
+    transition:ease 0.5s;
+}
+.main span:hover{
+    color:#9D4EDD;
 
-    /* filter: drop-shadow(2px 2px 2px #000) */
+    top: -10px;
 }
 
 .projects{
     width: 100%;
-    height: 90vh;
-    /* position: relative; */
+    height: 105vh;
     
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(135deg, #7B2CBF 0%, #3C096C 100%);
+}
+.projects h1{
+    margin: 0px;
+
+    font-size: 130px;
+
+    color:white;
+}
+.projectsCon{
+    width: 100%;
+    height: 50%;
 
     display: flex;
-    background-color: red;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 30px;
 }
+.project{
+    position: relative;
+    top: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 31%;
+    height: 70%;
+
+    background-color: white;
+    color:black;
+    font-size: 30px;
+    font-family: "Lato";
+    font-weight: 800;
+
+    cursor: pointer;
+    transition: ease 0.5s;
+
+    border-radius: 30px;
+}
+.project:hover{
+
+    top: -50px;
+
+}
+.project p{
+    margin:0px;
+    margin-right: 5%;
+}
+.projectImg{
+    height: 100%;
+}
+
 
 .contact{
     width: 100%;
-    height: 90vh;
+    height: 105vh;
 
-    background-color: green;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(45deg,  #132A13 0%, #4F772D 100%);
 }
+
+.contactCon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+}
+
+.contact h1{
+    margin:0px;
+    position: relative;
+    left: 0px;
+    
+    font-size: 130px;
+
+    color:white;
+}
+.contact a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    text-decoration: none;
+
+    font-size: 30px;
+    font-weight: 700;
+    transition: ease 300ms;
+
+}
+
+.contact a:hover{
+    letter-spacing: 7px;
+}
+
+.contact img{
+    width: 100px;
+    margin-right: 15px;
+}
+
 
 .footer{
     width: 100%;
-    height: 20vh;
+    height: 8vh;
 
-    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    background: linear-gradient(45deg,  #132A13 0%, #4F772D 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border-top: 2px black solid;
 }
