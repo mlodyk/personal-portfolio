@@ -180,7 +180,7 @@ html, body{
     text-decoration: none;
 
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 900;
     transition: ease 300ms;
 
 }
@@ -204,9 +204,9 @@ html, body{
     justify-content: center;
 
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 1000;
 
-    background: linear-gradient(45deg,  #132A13 0%, #4F772D 100%);
+    background: linear-gradient(45deg,  #132A13 40%, #4F772D 60%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 
